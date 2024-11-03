@@ -3,8 +3,9 @@ import s from "./style.module.scss"
 import CustomButton from "@/components/CustomButton";
 const Hero = () => {
     return (
-        <div className={`s.container relative flex flex-col justify-center`}>
-            <div className={"absolute top-0 w-full z-20"}>
+        <div className={`s.container relative flex flex-col justify-center `}>
+
+            <div className={"absolute top-0 w-full z-30"}>
                 <div className={"relative px-[110px] py-[38px]"}>
                     <div
                         className={"absolute z-[-1] top-0 left-0 w-full h-[128px] bg-greenBg opacity-55 px-[110px] py-[38px]"}/>
@@ -144,21 +145,17 @@ const Hero = () => {
                 </div>
             </div>
 
-            <div className={"relative"}>
-                <img src="/images/Hero/hero-bg.png"
-                     alt=""
-                     className={"top-0 left-0"}
-                />
-                <div className={"absolute top-0 left-0 w-full h-full flex flex-col gap-20 items-center justify-center z-20"}>
-                    <h1 className={"mt-32 text-white font-bold text-48 w-[773px] text-center"}>
-                        The leading B2B ecommerce platform for global trade
-                    </h1>
-                    <div className={"flex gap-4 justify-between p-4 bg-white opacity-[96] w-[50%] rounded-[62px]"}>
-                        <input type="text"
-                            className={"outline-none w-full ml-8 text-20"}
-                        />
-                        <CustomButton text={"Search"} isSecondary/>
-                    </div>
+            <img src="/images/Hero/hero-bg.png" alt=""/>
+
+            <div className={"absolute top-0 left-0 w-full h-full flex flex-col gap-16 items-center justify-center z-20"}>
+                <h1 className={"mt-32 leading-[52px] text-white font-bold text-48 w-[773px] text-center"}>
+                    The leading B2B ecommerce platform for global trade
+                </h1>
+                <div className={"flex gap-4 justify-between p-4 bg-white opacity-[96] w-[50%] rounded-[62px]"}>
+                    <input type="text"
+                           className={"outline-none w-full ml-8 text-20"}
+                    />
+                    <CustomButton text={"Search"} isSecondary/>
                 </div>
             </div>
         </div>

@@ -19,8 +19,15 @@ body {
   //background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
   box-sizing: border-box;
+  background: #F4F4F4;
 }
 
 .padLayout{
   padding: 0  80px;
+}
+.exploreBoxPad{
+  padding: 53px 97px 56px 51px;
+}
+.boxShadow{
+  box-shadow: 2px 2px 3px 3px rgb(0,0,0,0.2);
 }
