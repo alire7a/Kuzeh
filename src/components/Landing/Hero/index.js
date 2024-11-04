@@ -3,7 +3,7 @@ import s from "./style.module.scss"
 import CustomButton from "@/components/CustomButton";
 const Hero = () => {
     return (
-        <div className={`s.container relative flex flex-col justify-center `}>
+        <div className={`s.container relative z-10 flex flex-col justify-center `}>
 
             <div className={"absolute top-0 w-full z-30"}>
                 <div className={"relative px-[110px] py-[38px]"}>

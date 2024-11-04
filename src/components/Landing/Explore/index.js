@@ -2,7 +2,7 @@ import React from 'react';
 
 const Explore = () => {
     return (
-        <div className={"-mt-[20px] padLayout grid grid-cols-3 gap-x-5 gap-y-6 "}>
+        <div className={"-mt-[20px] relative z-10 padLayout grid grid-cols-3 gap-x-5 gap-y-6 "}>
             <div className={"exploreBoxPad flex flex-col gap-9 rounded-16 boxShadow bg-white"}>
                 <div>
                     <svg width="84" height="84" viewBox="0 0 84 84" fill="none" xmlns="http://www.w3.org/2000/svg">

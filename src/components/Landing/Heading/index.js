@@ -4,7 +4,7 @@ const Heading = () => {
     return (
         <div className={"flex items-center justify-between padLayout !py-3 bg-white"}>
             <div className={"flex items-center gap-5"}>
-                <div className={"p-[10px] rounded-8"}>
+                <div className={"p-[10px] rounded-8 shadow-lg"}>
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M4 8.5H20" stroke="#141B34" stroke-width="1.5" stroke-linejoin="round"/>
                         <path d="M4 15.5H20" stroke="#141B34" stroke-width="1.5" stroke-linejoin="round"/>
