@@ -9,7 +9,7 @@ const FromFactory = () => {
                 </h2>
             </div>
             <div className={"flex gap-5 items-center items-stretch"}>
-                <div className={"rounded-16 bg-wheatBg overflow-hidden flex flex-col justify-between"}>
+                <div className={"rounded-16 bg-wheatBg overflow-hidden"}>
                     <div>
                         <img src="/images/FromFactory/pic1.png" alt=""/>
                     </div>
