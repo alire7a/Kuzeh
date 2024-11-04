@@ -10,6 +10,7 @@ import TailoredDiscount from "@/components/Landing/TailoredDiscount";
 import GetStarted from "@/components/Landing/GetStarted";
 import Empowering from "@/components/Landing/Empowering";
 import CountryBox from "@/components/Landing/CountryBox";
+import Footer from "@/components/Landing/Footer";
 
 const Landing = () => {
     return (
@@ -25,6 +26,7 @@ const Landing = () => {
             <GetStarted/>
             <Empowering/>
             <CountryBox/>
+            <Footer/>
         </div>
     );
 };
