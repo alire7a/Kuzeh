@@ -35,8 +35,8 @@ const TopDeals = () => {
     };
 
     return (
-        <div className="padLayout flex flex-col gap-9 !pb-[100px]">
-            <div className="flex items-center justify-between">
+        <div className="flex flex-col gap-9 !pb-[100px]">
+            <div className="flex items-center justify-between padLayout">
                 <h2 className="font-semibold text-24 text-black-100 leading-[30px]">Top deals</h2>
                 <CustomButton text={"View more"} className={"bg-transparent border-1 border-black-0"} />
             </div>

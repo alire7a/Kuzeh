@@ -12,12 +12,14 @@ module.exports = {
       current: 'currentColor',
       white: '#ffffff',
       greenBg: '#005160',
+      wheatBg: '#F4F4F4',
       black: {
         0: "black",
         100: "#222222",
         200: "#040404",
         300: "#666666",
         400: "#333333",
+        500: "#101828",
       },
       gray:{
         50:"#F1F0F4",

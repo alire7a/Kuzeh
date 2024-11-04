@@ -4,6 +4,7 @@ import Heading from "@/components/Landing/Heading";
 import Explore from "@/components/Landing/Explore";
 import Discover from "@/components/Landing/Discover";
 import TopDeals from "@/components/Landing/TopDeals";
+import FromFactory from "@/components/Landing/FromFactory";
 
 const Landing = () => {
     return (
@@ -13,6 +14,7 @@ const Landing = () => {
             <Explore/>
             <Discover/>
             <TopDeals/>
+            <FromFactory/>
         </div>
     );
 };
