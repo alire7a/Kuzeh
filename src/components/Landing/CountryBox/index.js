@@ -31,7 +31,7 @@ const CountryBox = () => {
                 </div>
                 <div className={"flex flex-col gap-3 items-center w-[170px]"}>
                     <img src="/images/CountryBox/South%20Korea.png" alt=""/>
-                    <p className={"text-[22px] text-black-100 leading-[34px]"}>
+                    <p className={"text-[22px] text-center text-black-100 leading-[34px]"}>
                         South Korea
                     </p>
                 </div>
