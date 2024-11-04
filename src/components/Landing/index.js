@@ -9,6 +9,7 @@ import TradeConfidence from "@/components/Landing/TradeConfidence";
 import TailoredDiscount from "@/components/Landing/TailoredDiscount";
 import GetStarted from "@/components/Landing/GetStarted";
 import Empowering from "@/components/Landing/Empowering";
+import CountryBox from "@/components/Landing/CountryBox";
 
 const Landing = () => {
     return (
@@ -23,6 +24,7 @@ const Landing = () => {
             <TailoredDiscount/>
             <GetStarted/>
             <Empowering/>
+            <CountryBox/>
         </div>
     );
 };
