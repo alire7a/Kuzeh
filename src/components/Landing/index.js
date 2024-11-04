@@ -5,6 +5,7 @@ import Explore from "@/components/Landing/Explore";
 import Discover from "@/components/Landing/Discover";
 import TopDeals from "@/components/Landing/TopDeals";
 import FromFactory from "@/components/Landing/FromFactory";
+import TradeConfidence from "@/components/Landing/TradeConfidence";
 
 const Landing = () => {
     return (
@@ -15,6 +16,7 @@ const Landing = () => {
             <Discover/>
             <TopDeals/>
             <FromFactory/>
+            <TradeConfidence/>
         </div>
     );
 };
