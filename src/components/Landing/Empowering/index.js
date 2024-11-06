@@ -4,7 +4,7 @@ const Empowering = () => {
     return (
         <div className={"padLayout !pt-[100px] !pb-[120px] flex flex-col gap-20"}>
             <div className={"flex gap-20"}>
-                <h2 className={"font-semibold text-[44px] leading-[52px] w-[660px]"}>
+                <h2 className={"font-semibold text-shadow text-[44px] leading-[52px] w-[660px]"}>
                     Empowering businesses through global trade
                 </h2>
                 <div className={"text-20 leading-[26px] w-[660px]"}>

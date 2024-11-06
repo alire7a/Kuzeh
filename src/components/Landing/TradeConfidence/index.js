@@ -4,7 +4,7 @@ const TradeConfidence = () => {
     return (
         <div className={"px-20 pt-[120px] pb-[90px] flex flex-col gap-[100px] justify-between"}>
             <div>
-                <h2 className={"font-semibold text-[44px] leading-[52px] w-[800px]"}>
+                <h2 className={"font-semibold text-[44px] leading-[52px] w-[800px] text-shadow"}>
                     Trade with confidence from
                     production quality to purchase
                     protection

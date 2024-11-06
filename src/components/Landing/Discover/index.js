@@ -1,11 +1,19 @@
-import React from 'react';
+import React, {useRef} from 'react';
 import CustomButton from "@/components/CustomButton";
+import {Navigation,Pagination} from "swiper/modules";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import s from "./styles.module.scss"
 
 const Discover = () => {
+
+
     return (
-        <div className={"padLayout !py-[90px] flex flex-col gap-[45px]"}>
+        <div className={`${s.container} padLayout !py-[90px] flex flex-col gap-[45px]`}>
             <div className={"flex items-center justify-between"}>
-                <h2 className={"font-semibold text-32 text-black-100 leading-[40px] w-[425px]"}>
+                <h2 className={"font-semibold text-32 text-black-100 leading-[40px] w-[425px] text-shadow"}>
                     Discover your next business opportunity
                 </h2>
                 <CustomButton text={"View more"} className={"bg-transparent border-1 border-black-0"}/>
@@ -30,30 +38,59 @@ const Discover = () => {
                                 Men's Oem Service Hoodies & Sweatshirts
                             </div>
                         </div>
-                        <div className={"grid grid-cols-4 grid-rows-3 gap-x-8 gap-y-4"}>
-                            <div className={"col-span-3 row-span-3"}>
-                                <img src="/images/Discover/pic1.png" className={"h-full w-full"} alt=""/>
-                            </div>
-                            <div>
-                                <img src="/images/Discover/pic2.png" className={"h-full w-full"} alt=""/>
-                            </div>
-                            <div>
-                                <img src="/images/Discover/pic3.png" className={"h-full w-full"} alt=""/>
-                            </div>
-                            <div>
-                                <img src="/images/Discover/pic4.png" className={"h-full w-full"} alt=""/>
-                            </div>
+                        <div className={"h-[380px]"}>
+                            <Swiper  className={"w-full h-full"}
+                                     spaceBetween={20}
+                                     modules={[Navigation]}
+                                     navigation={{
+                                         nextEl:"#nextSlideDiscoverLeft",
+                                         prevEl:"#prevSlideDiscoverLeft",
+                                     }}
+                                     speed={1200}
+
+                            >
+                                <SwiperSlide>
+                                    <div className={"grid h-full grid-cols-4 grid-rows-3 gap-x-8 gap-y-4"}>
+                                        <div className={"col-span-3 row-span-3 rounded-[12px] overflow-hidden"}>
+                                            <img src="/images/Discover/pic1.png" className={"h-full w-full"} alt=""/>
+                                        </div>
+                                        <div className={"rounded"}>
+                                            <img src="/images/Discover/pic2.png" className={"h-full w-full"} alt=""/>
+                                        </div>
+                                        <div className={"rounded"}>
+                                            <img src="/images/Discover/pic3.png" className={"h-full w-full"} alt=""/>
+                                        </div>
+                                        <div className={"rounded"}>
+                                            <img src="/images/Discover/pic4.png" className={"h-full w-full"} alt=""/>
+                                        </div>
+                                    </div>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <div className={"grid h-full grid-cols-4 grid-rows-3 gap-x-8 gap-y-4"}>
+                                        <div className={"col-span-3 row-span-3 rounded-[12px] overflow-hidden"}>
+                                            <img src="/images/Discover/pic1.png" className={"h-full w-full"} alt=""/>
+                                        </div>
+                                        <div className={"rounded"}>
+                                            <img src="/images/Discover/pic2.png" className={"h-full w-full"} alt=""/>
+                                        </div>
+                                        <div className={"rounded"}>
+                                            <img src="/images/Discover/pic3.png" className={"h-full w-full"} alt=""/>
+                                        </div>
+                                        <div className={"rounded"}>
+                                            <img src="/images/Discover/pic4.png" className={"h-full w-full"} alt=""/>
+                                        </div>
+                                    </div>
+                                </SwiperSlide>
+
+                            </Swiper>
                         </div>
+
                         <div className={"flex items-center justify-between"}>
-                            <div className={"flex gap-1 items-center"}>
-                                <div className={"w-[25px] h-[6px] bg-greenBg rounded-8"}></div>
-                                <div className={"w-1.5 h-1 bg-black-0 opacity-15 rounded-8"}></div>
-                                <div className={"w-1.5 h-1 bg-black-0 opacity-15 rounded-8"}></div>
-                                <div className={"w-1.5 h-1 bg-black-0 opacity-15 rounded-8"}></div>
-                            </div>
+                            <div></div>
+
 
                             <div className={"flex items-center gap-3"}>
-                                <div className={"cursor-pointer"}>
+                                <div id={"prevSlideDiscoverLeft"} className={"cursor-pointer"}>
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                          xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -64,7 +101,7 @@ const Discover = () => {
                                               stroke-linecap="round" stroke-linejoin="round"/>
                                     </svg>
                                 </div>
-                                <div className={"cursor-pointer"}>
+                                <div id={"nextSlideDiscoverLeft"} className={"cursor-pointer"}>
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                          xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -94,30 +131,83 @@ const Discover = () => {
                                 109,000+ products added today
                             </div>
                         </div>
-                        <div className={"grid grid-cols-3 gap-x-8 gap-y-6"}>
-                            <div className={"col-span-1"}>
-                                <img src="/images/Discover/pic5.png" className={"h-full w-full"} alt=""/>
-                            </div>
-                            <div className={"col-span-2"}>
-                                <img src="/images/Discover/pic7.png" className={"h-full w-full"} alt=""/>
-                            </div>
-                            <div className={"col-span-1"}>
-                                <img src="/images/Discover/pic6.png" className={"h-full w-full"} alt=""/>
-                            </div>
-                            <div className={"col-span-2"}>
-                                <img src="/images/Discover/pic8.png" className={"h-full w-full"} alt=""/>
-                            </div>
-                        </div>
+
+                      <div className={"h-[380px]"}>
+                          <Swiper  className={"w-full h-full"}
+                                   spaceBetween={20}
+                                   modules={[Navigation]}
+                                   navigation={{
+                                       nextEl:"#nextSlideDiscoverRight",
+                                       prevEl:"#prevSlideDiscoverRight",
+                                   }}
+                                   speed={1200}
+
+                          >
+                              <SwiperSlide>
+                                  <div className={"grid w-full h-full grid-cols-3 gap-x-8 gap-y-6"}>
+                                      <div className={"col-span-1 rounded"}>
+                                          <img src="/images/Discover/pic5.png" className={"h-full w-full"} alt=""/>
+                                      </div>
+                                      <div className={"col-span-2 rounded"}>
+                                          <img src="/images/Discover/pic7.png" className={"h-full w-full"} alt=""/>
+                                      </div>
+                                      <div className={"col-span-1 rounded"}>
+                                          <img src="/images/Discover/pic6.png" className={"h-full w-full"} alt=""/>
+                                      </div>
+                                      <div className={"col-span-2 rounded"}>
+                                          <img src="/images/Discover/pic8.png" className={"h-full w-full"} alt=""/>
+                                      </div>
+                                  </div>
+                              </SwiperSlide>
+
+                              <SwiperSlide>
+                                  <div className={"grid w-full h-full grid-cols-3 gap-x-8 gap-y-6"}>
+                                      <div className={"col-span-1 rounded"}>
+                                          <img src="/images/Discover/pic5.png" className={"h-full w-full"} alt=""/>
+                                      </div>
+                                      <div className={"col-span-2 rounded"}>
+                                          <img src="/images/Discover/pic7.png" className={"h-full w-full"} alt=""/>
+                                      </div>
+                                      <div className={"col-span-1 rounded"}>
+                                          <img src="/images/Discover/pic6.png" className={"h-full w-full"} alt=""/>
+                                      </div>
+                                      <div className={"col-span-2 rounded"}>
+                                          <img src="/images/Discover/pic8.png" className={"h-full w-full"} alt=""/>
+                                      </div>
+                                  </div>
+                              </SwiperSlide>
+
+                              <SwiperSlide>
+                                  <div className={"grid w-full h-full grid-cols-3 gap-x-8 gap-y-6"}>
+                                      <div className={"col-span-1 rounded"}>
+                                          <img src="/images/Discover/pic5.png" className={"h-full w-full"} alt=""/>
+                                      </div>
+                                      <div className={"col-span-2 rounded"}>
+                                          <img src="/images/Discover/pic7.png" className={"h-full w-full"} alt=""/>
+                                      </div>
+                                      <div className={"col-span-1 rounded"}>
+                                          <img src="/images/Discover/pic6.png" className={"h-full w-full"} alt=""/>
+                                      </div>
+                                      <div className={"col-span-2 rounded"}>
+                                          <img src="/images/Discover/pic8.png" className={"h-full w-full"} alt=""/>
+                                      </div>
+                                  </div>
+                              </SwiperSlide>
+
+                          </Swiper>
+                      </div>
+
                         <div className={"flex items-center justify-between"}>
-                            <div className={"flex gap-1 items-center"}>
-                                <div className={"w-[25px] h-[6px] bg-greenBg rounded-8"}></div>
-                                <div className={"w-1.5 h-1 bg-black-0 opacity-15 rounded-8"}></div>
-                                <div className={"w-1.5 h-1 bg-black-0 opacity-15 rounded-8"}></div>
-                                <div className={"w-1.5 h-1 bg-black-0 opacity-15 rounded-8"}></div>
-                            </div>
+                            <div></div>
+                            {/*<div className={"flex gap-1 items-center"}>*/}
+                            {/*    <div className={"w-[25px] h-[6px] bg-greenBg rounded-8"}></div>*/}
+                            {/*    <div className={"w-1.5 h-1 bg-black-0 opacity-15 rounded-8"}></div>*/}
+                            {/*    <div className={"w-1.5 h-1 bg-black-0 opacity-15 rounded-8"}></div>*/}
+                            {/*    <div className={"w-1.5 h-1 bg-black-0 opacity-15 rounded-8"}></div>*/}
+                            {/*</div>*/}
 
                             <div className={"flex items-center gap-3"}>
-                                <div className={"cursor-pointer"}>
+                                <div id={"prevSlideDiscoverRight"} className={"cursor-pointer"}>
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                          xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -128,7 +218,7 @@ const Discover = () => {
                                               stroke-linecap="round" stroke-linejoin="round"/>
                                     </svg>
                                 </div>
-                                <div className={"cursor-pointer"}>
+                                <div id={"nextSlideDiscoverRight"} className={"cursor-pointer"}>
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                          xmlns="http://www.w3.org/2000/svg">
                                         <path

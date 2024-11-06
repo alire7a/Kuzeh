@@ -1,0 +1,24 @@
+.container{
+
+
+  :global{
+    .rounded{
+      @apply rounded-[12px] overflow-hidden;
+    }
+
+    .swiper-pagination{
+      display: flex;
+      align-items: center;
+      bottom: -120px !important;
+    }
+    .swiper-pagination-bullet{
+      @apply w-1.5 !mx-[2px] h-1 bg-black-0  rounded-8;
+      transition: .2s width;
+
+    }
+    .swiper-pagination-bullet-active{
+       @apply w-6 h-[6px]  rounded-8;
+      background: #005160 !important;
+    }
+  }
+}

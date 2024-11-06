@@ -1,8 +1,25 @@
 import React from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import {Navigation} from "swiper/modules";
+import s from "./styles.module.scss"
+import 'swiper/css';
+import "swiper/css/navigation";
+
 
 const Explore = () => {
+
+
+    const configSlider = {
+        slidesPerView:1,
+        modules:[Navigation],
+        navigation:{
+            nextEl:"#nextSlide",
+            prevEl:"#prevSlide",
+        }
+    }
+
     return (
-        <div className={"-mt-[20px] relative z-10 padLayout grid grid-cols-3 gap-x-5 gap-y-6 "}>
+        <div className={`${s.container} -mt-[20px] relative z-10 padLayout grid grid-cols-3 gap-x-5 gap-y-6 `}>
             <div className={"exploreBoxPad flex flex-col gap-9 rounded-16 boxShadow bg-white"}>
                 <div>
                     <svg width="84" height="84" viewBox="0 0 84 84" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -91,18 +108,62 @@ const Explore = () => {
                         to your business needs
                     </h2>
                 </div>
-                <div className={"grid grid-cols-5 gap-x-4 gap-y-6"}>
-                    <div><img src="/images/Explore/pic1.png" alt=""/></div>
-                    <div><img src="/images/Explore/pic2.png" alt=""/></div>
-                    <div><img src="/images/Explore/pic3.png" alt=""/></div>
-                    <div><img src="/images/Explore/pic4.png" alt=""/></div>
-                    <div><img src="/images/Explore/pic5.png" alt=""/></div>
-                    <div><img src="/images/Explore/pic6.png" alt=""/></div>
-                    <div><img src="/images/Explore/pic7.png" alt=""/></div>
-                    <div><img src="/images/Explore/pic8.png" alt=""/></div>
-                    <div><img src="/images/Explore/pic9.png" alt=""/></div>
-                    <div><img src="/images/Explore/pic10.png" alt=""/></div>
+                <div className={"relative w-full"}>
+                    <div className={`absolute inset-y-0 left-0 w-12 bg-gradient-to-r from-white/50 to-transparent opacity-100 transition-opacity duration-300 z-10`}></div>
+                    <div className={`absolute inset-y-0 right-0 w-12 bg-gradient-to-r from-transparent to-white/50 opacity-100 transition-opacity duration-300 z-10`}></div>
+
+                    <Swiper {...configSlider}>
+                        <SwiperSlide>
+                            <div className={"grid  grid-cols-5 gap-x-4 gap-y-6"}>
+                                <div><img src="/images/Explore/pic1.png" alt=""/></div>
+                                <div><img src="/images/Explore/pic2.png" alt=""/></div>
+                                <div><img src="/images/Explore/pic3.png" alt=""/></div>
+                                <div><img src="/images/Explore/pic4.png" alt=""/></div>
+                                <div><img src="/images/Explore/pic5.png" alt=""/></div>
+                                <div><img src="/images/Explore/pic6.png" alt=""/></div>
+                                <div><img src="/images/Explore/pic7.png" alt=""/></div>
+                                <div><img src="/images/Explore/pic8.png" alt=""/></div>
+                                <div><img src="/images/Explore/pic9.png" alt=""/></div>
+                                <div><img src="/images/Explore/pic10.png" alt=""/></div>
+                            </div>
+                        </SwiperSlide>   <SwiperSlide>
+                        <div className={"grid  grid-cols-5 gap-x-4 gap-y-6"}>
+                            <div><img src="/images/Explore/pic1.png" alt=""/></div>
+                            <div><img src="/images/Explore/pic2.png" alt=""/></div>
+                            <div><img src="/images/Explore/pic3.png" alt=""/></div>
+                            <div><img src="/images/Explore/pic4.png" alt=""/></div>
+                            <div><img src="/images/Explore/pic5.png" alt=""/></div>
+                            <div><img src="/images/Explore/pic6.png" alt=""/></div>
+                            <div><img src="/images/Explore/pic7.png" alt=""/></div>
+                            <div><img src="/images/Explore/pic8.png" alt=""/></div>
+                            <div><img src="/images/Explore/pic9.png" alt=""/></div>
+                            <div><img src="/images/Explore/pic10.png" alt=""/></div>
+                        </div>
+                    </SwiperSlide>   <SwiperSlide>
+                        <div className={"grid  grid-cols-5 gap-x-4 gap-y-6"}>
+                            <div><img src="/images/Explore/pic1.png" alt=""/></div>
+                            <div><img src="/images/Explore/pic2.png" alt=""/></div>
+                            <div><img src="/images/Explore/pic3.png" alt=""/></div>
+                            <div><img src="/images/Explore/pic4.png" alt=""/></div>
+                            <div><img src="/images/Explore/pic5.png" alt=""/></div>
+                            <div><img src="/images/Explore/pic6.png" alt=""/></div>
+                            <div><img src="/images/Explore/pic7.png" alt=""/></div>
+                            <div><img src="/images/Explore/pic8.png" alt=""/></div>
+                            <div><img src="/images/Explore/pic9.png" alt=""/></div>
+                            <div><img src="/images/Explore/pic10.png" alt=""/></div>
+                        </div>
+                    </SwiperSlide>
+                    </Swiper>
+                    <button id={"prevSlide"}   className={`absolute  -left-10 bottom-0 top-0  my-auto z-20 cursor-pointer transition-opacity duration-300`}>
+                        <img src="/images/TopDeals/leftArrow.png" alt="Scroll Left" />
+                    </button>
+                    <button id={"nextSlide"} className={`absolute  -right-10 bottom-0 top-0  my-auto z-20 cursor-pointer transition-opacity duration-300 rotate-180`}>
+
+                        <img className={"relative z-[2]"} src="/images/TopDeals/leftArrow.png" alt="Scroll right" />
+                    </button>
                 </div>
+
+
             </div>
         </div>
     );

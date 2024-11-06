@@ -13,12 +13,12 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
+//${geistSans.variable} ${geistMono.variable}
 export default function Home() {
   return (
     <div
-      className={`${geistSans.variable} ${geistMono.variable} `}
-    >
-    <Landing/>
+      className={` `}>
+     <Landing/>
     </div>
   );
 }
