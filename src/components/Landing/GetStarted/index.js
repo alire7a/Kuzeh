@@ -13,7 +13,7 @@ const GetStarted = () => {
                 </div>
                 <CustomButton text={"Sign up"} isSecondary className={"w-fit"}/>
             </div>
-            <div className={"rounded-tr-30 overflow-hidden max-w-[50%]"}>
+            <div className={"rounded-tr-30 overflow-hidden max-w-[55%]"}>
                 <img src="/images/GetStarted/pic1.png" alt=""/>
             </div>
         </div>
