@@ -136,7 +136,7 @@ const Hero = () => {
                 <h1 className={"mt-32 leading-[52px] text-white font-bold text-48 w-[773px] text-center"}>
                     The leading B2B ecommerce platform for global trade
                 </h1>
-                <div className={"flex gap-4 justify-between p-4 bg-white opacity-[96] w-[50%] rounded-[62px]"}>
+                <div className={"flex gap-4 justify-between p-2 bg-white opacity-[96] w-[50%] rounded-[62px]"}>
                     <input type="text"
                            placeholder={"search"}
                            className={"outline-none w-full ml-8 text-20"}

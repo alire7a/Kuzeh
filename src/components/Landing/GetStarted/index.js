@@ -5,7 +5,7 @@ const GetStarted = () => {
     return (
         <div className={"padLayout !pb-[60px] !pt-[90px] bg-white flex items-center justify-between"}>
             <div className={"flex flex-col gap-10 w-[452px]"}>
-                <div className={"font-semibold text-[44px] leading-[52px]"}>
+                <div className={"font-semibold text-[40px] leading-[52px]"}>
                     Ready to get started?
                 </div>
                 <div className={"text-20 w-[370px]"}>
@@ -13,7 +13,7 @@ const GetStarted = () => {
                 </div>
                 <CustomButton text={"Sign up"} isSecondary className={"w-fit"}/>
             </div>
-            <div>
+            <div className={"rounded-tr-30 overflow-hidden max-w-[50%]"}>
                 <img src="/images/GetStarted/pic1.png" alt=""/>
             </div>
         </div>

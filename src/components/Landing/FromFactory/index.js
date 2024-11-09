@@ -13,8 +13,8 @@ const FromFactory = () => {
                     <div>
                         <img src="/images/FromFactory/pic1.png" alt=""/>
                     </div>
-                    <div className={"flex items-center justify-between gap-4 px-6 py-8"}>
-                        <div className={"font-semibold text-24 leading-[32px] text-black-500"}>
+                    <div className={"flex items-center justify-between gap-4 px-6 py-6"}>
+                        <div className={"font-semibold text-14 leading-[32px] text-black-500"}>
                             Take factory live tours
                         </div>
                         <div>
@@ -30,8 +30,8 @@ const FromFactory = () => {
                     <div>
                         <img src="/images/FromFactory/pic2.png" alt=""/>
                     </div>
-                    <div className={"flex items-center justify-between gap-4 px-6 py-8"}>
-                        <div className={"font-semibold text-24 leading-[32px] text-black-500"}>
+                    <div className={"flex items-center justify-between gap-3 px-4 py-6"}>
+                        <div className={"font-semibold text-14 leading-[32px] text-black-500"}>
                             Connect with top-ranking manufacturers
                         </div>
                         <div>
@@ -47,8 +47,8 @@ const FromFactory = () => {
                     <div>
                         <img src="/images/FromFactory/pic3.png" alt=""/>
                     </div>
-                    <div className={"flex items-center justify-between gap-4 px-6 py-8"}>
-                        <div className={"font-semibold text-24 leading-[32px] text-black-500"}>
+                    <div className={"flex items-center justify-between gap-4 px-6 py-6"}>
+                        <div className={"font-semibold text-14 leading-[32px] text-black-500"}>
                             Get samples
                         </div>
                         <div>
